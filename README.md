@@ -32,10 +32,10 @@ You can refer to [PostgresTutorial](http://www.postgresqltutorial.com/install-po
   password: 
   host: localhost `
 10. The above should be in there and uncommented. Below everything else should be commented
-11. In your rails app `bundle exec rake db:create`
-12. `rails s` to run server
 
 * Database initialization
+1. In your rails app `bundle exec rake db:create`
+2. `rails s` to run server
 
 * Deployment instructions
 
