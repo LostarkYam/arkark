@@ -26,14 +26,11 @@ You can refer to [PostgresTutorial](http://www.postgresqltutorial.com/install-po
 6. Install like normal and write down the password for superuser
 7. Run PGAdmin
 8. Go to Rails app > config > database.yml
-9. ```
-    development:
-  <<: *default
+9. `    development:
   database: LostArkYam_development
   username: postgres
   password: 
-  host: localhost 
-  ```
+  host: localhost `
 10. The above should be in there and uncommented. Below everything else should be commented
 11. In your rails app `bundle exec rake db:create`
 12. `rails s` to run server
