@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import NavBar from './Navbar/navbar';
+import TopNavBar from './Navbar/topnavbar';
 
 class App extends React.Component {
 
     render(){
       return(
         <div>
-          <Route path="/" component={ NavBar } />
+          <Route path="/" component={ TopNavBar } />
         </div>
       );
     }
