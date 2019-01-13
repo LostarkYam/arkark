@@ -1,14 +1,20 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import TopNavBar from './Navbar/topnavbar';
+import TopNavBar  from './Navbar/topnavbar';
+import Footer from './Navbar/footer';
 
 class App extends React.Component {
 
+  componentWillMount() {
+    // document.body.style.backgroundColor = 'green';
+  }
+
     render(){
       return(
-        <div>
+        <React.Fragment>
           <Route path="/" component={ TopNavBar } />
-        </div>
+          <Route path="/" component={ Footer } />
+        </React.Fragment>
       );
     }
   }
