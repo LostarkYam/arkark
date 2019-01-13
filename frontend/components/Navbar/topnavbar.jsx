@@ -11,7 +11,7 @@ class TopNavBar extends React.Component {
           </Navbar.Header>
           <Nav pullRight>
             <NavItem href='#'>
-              Components
+              Skill Tree
             </NavItem>
             <NavItem href='#'>
               Get Started

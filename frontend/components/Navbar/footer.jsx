@@ -8,6 +8,8 @@ class Footer extends React.Component {
         <Navbar bsStyle='inverse' expand="md">
           <Navbar.Header>
             <Navbar.Brand><Link to={'#'}>LOST ARK</Link></Navbar.Brand>
+            <Navbar.Brand><Link to={'#'}>News</Link></Navbar.Brand>
+            <Navbar.Brand><Link to={'#'}>Skill Tree</Link></Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>
             <NavItem className='white-text' disabled>

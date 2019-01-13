@@ -36138,7 +36138,7 @@ var TopNavBar = function (_React$Component) {
           _react2.default.createElement(
             _reactBootstrap.NavItem,
             { href: '#' },
-            'Components'
+            'Skill Tree'
           ),
           _react2.default.createElement(
             _reactBootstrap.NavItem,
@@ -46857,6 +46857,24 @@ var Footer = function (_React$Component) {
               _reactRouterDom.Link,
               { to: '#' },
               'LOST ARK'
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Navbar.Brand,
+            null,
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '#' },
+              'News'
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Navbar.Brand,
+            null,
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '#' },
+              'Skill Tree'
             )
           )
         ),
