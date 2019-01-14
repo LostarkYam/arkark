@@ -33512,6 +33512,10 @@ var _footer = __webpack_require__(327);
 
 var _footer2 = _interopRequireDefault(_footer);
 
+var _home = __webpack_require__(335);
+
+var _home2 = _interopRequireDefault(_home);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -33530,17 +33534,13 @@ var App = function (_React$Component) {
   }
 
   _createClass(App, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      // document.body.style.backgroundColor = 'green';
-    }
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         _react2.default.Fragment,
         null,
         _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _topnavbar2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _home2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _footer2.default })
       );
     }
@@ -36138,7 +36138,12 @@ var TopNavBar = function (_React$Component) {
           _react2.default.createElement(
             _reactBootstrap.NavItem,
             { href: '#' },
-            'Components'
+            'Skill Tree'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.NavItem,
+            { href: '#' },
+            'Builds'
           ),
           _react2.default.createElement(
             _reactBootstrap.NavItem,
@@ -46865,7 +46870,7 @@ var Footer = function (_React$Component) {
           { pullRight: true },
           _react2.default.createElement(
             _reactBootstrap.NavItem,
-            { className: 'white-text', disabled: true },
+            { disabled: true },
             '@Copyright 2019'
           )
         )
@@ -46877,6 +46882,83 @@ var Footer = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Footer;
+
+/***/ }),
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBootstrap = __webpack_require__(88);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_React$Component) {
+    _inherits(Home, _React$Component);
+
+    function Home() {
+        _classCallCheck(this, Home);
+
+        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    }
+
+    _createClass(Home, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                _reactBootstrap.Jumbotron,
+                { className: 'jumbo-padding' },
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    'Hello, Lost Ark World!'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    _react2.default.createElement(
+                        _reactBootstrap.Button,
+                        { bsStyle: 'primary' },
+                        'Learn more'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Home;
+}(_react2.default.Component);
+
+exports.default = Home;
 
 /***/ })
 /******/ ]);
