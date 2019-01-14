@@ -10,7 +10,7 @@ class Footer extends React.Component {
             <Navbar.Brand><Link to={'#'}>LOST ARK</Link></Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>
-            <NavItem className='white-text' disabled>
+            <NavItem disabled>
               @Copyright 2019
             </NavItem>
           </Nav>

@@ -28,7 +28,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'react_on_rails', '11.0.3'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
