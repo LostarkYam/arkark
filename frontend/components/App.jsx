@@ -9,8 +9,7 @@ class App extends React.Component {
     render(){
       return(
         <React.Fragment>
-          <Route path="/" component={ TopNavBar } />
-          <Route path="/" component={ Home } />
+
           <Route path="/" component={ Footer } />
         </React.Fragment>
       );

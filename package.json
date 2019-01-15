@@ -31,7 +31,6 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "react": "^16.7.0",
-    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
     "react-on-rails": "^11.0.3",
     "react-router": "^4.3.1",
