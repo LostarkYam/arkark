@@ -7,6 +7,7 @@ class Footer extends React.Component {
       return(
         <li>
           LOST ARK TEST
+          <a>LINK HERE</a>
         </li>
       );
   }

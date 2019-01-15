@@ -28431,7 +28431,12 @@ var Footer = function (_React$Component) {
       return _react2.default.createElement(
         'li',
         null,
-        'LOST ARK TEST'
+        'LOST ARK TEST',
+        _react2.default.createElement(
+          'a',
+          null,
+          'LINK HERE'
+        )
       );
     }
   }]);
