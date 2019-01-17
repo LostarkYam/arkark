@@ -1,0 +1,32 @@
+<%= form_with(model: ark_class, local: true) do |form| %>
+  <% if ark_class.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ark_class.errors.count, "error") %> prohibited this ark_class from being saved:</h2>
+
+      <ul>
+      <% ark_class.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :classtype %>
+    <%= form.text_field :classtype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
