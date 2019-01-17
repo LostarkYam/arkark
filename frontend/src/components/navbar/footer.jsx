@@ -6,10 +6,10 @@ class Footer extends React.Component {
   render(){
       return(
         <Navbar color="light" light expand="md">
-          <NavbarBrand>LOST ARK TEST</NavbarBrand>
-          <Nav>
+          <NavbarBrand>Lost Ark Site</NavbarBrand>
+          <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/">Components</NavLink>
+              <NavbarBrand>@Copyright 2019</NavbarBrand>
             </NavItem>
           </Nav>
         </Navbar>
