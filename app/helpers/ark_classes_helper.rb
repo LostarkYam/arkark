@@ -1,0 +1,2 @@
+module ArkClassesHelper
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ark_class.name %>
+</p>
+
+<p>
+  <strong>Class Type:</strong>
+  <%= @ark_class.classtype %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ark_class.description %>
+</p>
+
+<%= link_to 'Edit', edit_api_v1_ark_class_path(@ark_class) %> |
+<%= link_to 'Back', ark_classes_path %>
