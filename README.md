@@ -12,8 +12,8 @@ Things you may want to cover:
 * Installation
 1. Download Ruby v2.5.3 on [RubyInstaller.org](https://rubyinstaller.org/)
 2. Install Rails by typing `gem install rails`
-3. bundle install
-4. npm install
+3. `bundle install`
+4. `npm install`
 
 * Database creation Postgresql
 1. Go to [Postgresql.org](https://www.postgresql.org/download/windows/)
