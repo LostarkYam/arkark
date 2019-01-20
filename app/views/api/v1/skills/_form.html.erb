@@ -1,0 +1,97 @@
+<%= form_with(model: skill, local: true) do |form| %>
+  <% if skill.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(skill.errors.count, "error") %> prohibited this skill from being saved:</h2>
+
+      <ul>
+      <% skill.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acquired_level %>
+    <%= form.number_field :acquired_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cooldown %>
+    <%= form.number_field :cooldown %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skill_type %>
+    <%= form.text_field :skill_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mana_cost %>
+    <%= form.number_field :mana_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :effect %>
+    <%= form.text_field :effect %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_1_1 %>
+    <%= form.number_field :t_1_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_1_2 %>
+    <%= form.number_field :t_1_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_1_3 %>
+    <%= form.number_field :t_1_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_2_1 %>
+    <%= form.number_field :t_2_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_2_2 %>
+    <%= form.number_field :t_2_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_2_3 %>
+    <%= form.number_field :t_2_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_3_1 %>
+    <%= form.number_field :t_3_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_3_2 %>
+    <%= form.number_field :t_3_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :t_3_3 %>
+    <%= form.number_field :t_3_3 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

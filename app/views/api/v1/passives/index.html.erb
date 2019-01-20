@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Passives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @passives.each do |passife| %>
+      <tr>
+        <td><%= passife.name %></td>
+        <td><%= passife.description %></td>
+        <td><%= link_to 'Show', passife %></td>
+        <td><%= link_to 'Edit', api_v1_edit_passife_path(passife) %></td>
+        <td><%= link_to 'Destroy', passife, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Passife', new_passife_path %>

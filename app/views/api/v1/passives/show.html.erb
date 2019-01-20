@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @passife.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @passife.description %>
+</p>
+
+<%= link_to 'Edit', api_v1_edit_passife_path(@passife) %> |
+<%= link_to 'Back', passives_path %>
