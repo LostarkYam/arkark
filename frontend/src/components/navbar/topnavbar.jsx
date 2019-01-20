@@ -8,6 +8,9 @@ class TopNavBar extends React.Component {
           <NavbarBrand>Lost Ark Site</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <NavItem>
+              <NavLink href='/admin'>Admin</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink>Skill Tree</NavLink>
             </NavItem>
             <NavItem>

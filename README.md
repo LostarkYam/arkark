@@ -3,17 +3,18 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
+## Versions:
 * Ruby version 2.5.3
-
 * Rails version 5.2
 
-* Installation
+## Installation:
 1. Download Ruby v2.5.3 on [RubyInstaller.org](https://rubyinstaller.org/)
 2. Install Rails by typing `gem install rails`
 3. `bundle install`
-4. `npm install`
+4. Open the rails server `rails s -p 3001`
+5. Go into the Frontend folder with `cd frontend`
+6. `npm install`
+7. `npm start` to start the server
 
 * Database creation Postgresql
 1. Go to [Postgresql.org](https://www.postgresql.org/download/windows/)
@@ -35,8 +36,16 @@ You can refer to [PostgresTutorial](http://www.postgresqltutorial.com/install-po
 
 * Database initialization
 1. In your rails app `bundle exec rake db:create`
-2. `rails s` to run server
+2. `bundle exec rake db:seed` to seed the db with some data
+3. `rails s -p 3001` to run server
 
 * Deployment instructions
+NONE
 
-* ....
+## Project Description:
+
+* Wireframes for the site:
+
+
+<img src='./lib/assets/wireframe1.jpg' width="500" height="500">
+<img src='./lib/assets/wireframe2.jpg' width="500" height="500">

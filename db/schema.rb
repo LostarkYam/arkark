@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_16_031254) do
+ActiveRecord::Schema.define(version: 2019_01_20_180000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,35 @@ ActiveRecord::Schema.define(version: 2019_01_16_031254) do
     t.string "name"
     t.string "classtype"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "passives", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "skills", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.integer "acquired_level"
+    t.integer "cooldown"
+    t.string "skill_type"
+    t.integer "mana_cost"
+    t.string "effect"
+    t.integer "t_1_1"
+    t.integer "t_1_2"
+    t.integer "t_1_3"
+    t.integer "t_2_1"
+    t.integer "t_2_2"
+    t.integer "t_2_3"
+    t.integer "t_3_1"
+    t.integer "t_3_2"
+    t.integer "t_3_3"
+    t.integer "arkclass_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
