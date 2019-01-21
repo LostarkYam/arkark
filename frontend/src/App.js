@@ -9,6 +9,7 @@ import Admin from './components/admin/admin';
 import Classes from './components/admin/classes';
 import Skills from './components/admin/skills';
 import Passives from './components/admin/passives';
+import Navs from './components/navs/navs';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route path="/" component={TopNavBar}></Route>
+          <Route path="/" component={Navs}></Route>
           <Switch>
             <Route exact path="/admin/classes" component={Classes}></Route>
             <Route exact path="/admin/skills" component={Skills}></Route>

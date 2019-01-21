@@ -7,7 +7,7 @@ class Admin extends React.Component {
   render(){
       return(
         <Jumbotron>
-            <h1>Hello Admin</h1>
+            <h1>Hello This is Test Page</h1>
             <p>
                 Please Select Data to edit or show.
             </p>
