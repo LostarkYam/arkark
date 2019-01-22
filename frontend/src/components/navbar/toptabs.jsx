@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 
-export default class Navs extends React.Component {
+class TopTabs extends React.Component {
   constructor(props) {
     super(props);
 
@@ -52,3 +52,5 @@ export default class Navs extends React.Component {
     );
   }
 }
+
+export default TopTabs;
