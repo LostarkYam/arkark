@@ -11,6 +11,7 @@ class Classes extends React.Component {
       error: ''
     }
   }
+
   componentDidMount(){
     // Get all the classes from the backend
     getAllClasses().then(res => {
@@ -25,7 +26,7 @@ class Classes extends React.Component {
         {this.state.data.map((cl) => {
           return <ClassItem key={cl.id} name={cl.name} description={cl.description}></ClassItem>
         })}
-        </Jumbotron>
+      </Jumbotron>
       );
   }
 }

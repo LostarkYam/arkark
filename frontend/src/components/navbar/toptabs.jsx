@@ -1,4 +1,5 @@
 import React from 'react';
+import './toptabs.css';
 import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 
 class TopTabs extends React.Component {
@@ -20,12 +21,12 @@ class TopTabs extends React.Component {
   render() {
     return (
       <div>
-        <Nav tabs>
+        <Nav>
           <NavItem>
-            <NavLink href="/" active>Home</NavLink>
+            <NavLink href="/" active className="toptabs">Home</NavLink>
           </NavItem>
           <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-            <DropdownToggle nav caret>
+            <DropdownToggle nav caret className="toptabs">
               Builds
             </DropdownToggle>
             <DropdownMenu>
@@ -39,13 +40,13 @@ class TopTabs extends React.Component {
             </DropdownMenu>
           </Dropdown>
           <NavItem>
-            <NavLink href="/admin">Updates</NavLink>
+            <NavLink href="/updates" className="toptabs">Updates</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/admin">News</NavLink>
+            <NavLink href="/news" className="toptabs" >News</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/admin">Discussion Board</NavLink>
+            <NavLink href="/admin" className="toptabs" >Discussion Board</NavLink>
           </NavItem>
         </Nav>
       </div>
