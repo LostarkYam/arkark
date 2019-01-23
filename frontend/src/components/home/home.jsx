@@ -7,7 +7,7 @@ class Home extends React.Component {
   render(){
       return(
         <Jumbotron>
-          <div className="home-carousel">
+          <div className="home-carousel-style">
           <HomeCarousel />
           </div>
          

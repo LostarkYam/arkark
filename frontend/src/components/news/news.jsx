@@ -14,7 +14,7 @@ class News extends React.Component {
         return(
           <Jumbotron>
             <h1>Lost Ark News!</h1>
-            <NewsItems/>
+            <NewsItems />
           </Jumbotron>
           );
       }

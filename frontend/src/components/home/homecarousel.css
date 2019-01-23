@@ -2,5 +2,16 @@
     position: center;
     margin-bottom: 1%;
     background-color: black;
-    width: 100%;
+    max-width: 900px;
+    max-height: 506px;
+}
+
+.arrow {
+    width: 60%;
+
+}
+
+.home-carousel-style {
+    display: flex;
+    justify-content: center;
 }

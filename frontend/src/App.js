@@ -23,6 +23,8 @@ class App extends Component {
           <Route path="/" component={LoginNav}></Route>
           <Route path="/" component={TopTabs}></Route>
           <Switch>
+            <Route exact path="/news" component={News}></Route>
+            <Route exact path="/updates" component={Updates}></Route>
             <Route exact path="/admin/classes" component={Classes}></Route>
             <Route exact path="/admin/skills" component={Skills}></Route>
             <Route exact path="/admin/passives" component={Passives}></Route>
@@ -30,12 +32,6 @@ class App extends Component {
             <Route exact path="/" component={Home}></Route>
             <Route component={NotFound}></Route>
           </Switch>
-          <Switch>
-            <Route exact path="/news" component={News}></Route>
-          </Switch>
-          <Switch>
-            <Route exact path="/updates" component={Updates}></Route>
-\          </Switch>
           <Route path="/" component={Footer}></Route>
         </div>
       </Router>
