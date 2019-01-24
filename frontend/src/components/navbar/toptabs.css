@@ -1,3 +1,10 @@
 .toptabs {
-    color: #CE8339;
+    color: #fafafa;
+    font-weight: 500;
+}
+
+.tab-items{
+    width: 1100px;
+    display: inline-flex !important;
+    background-color: #1f1f1f;
 }

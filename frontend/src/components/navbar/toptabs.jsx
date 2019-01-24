@@ -21,7 +21,7 @@ class TopTabs extends React.Component {
   render() {
     return (
       <div>
-        <Nav>
+        <Nav className="tab-items">
           <NavItem>
             <NavLink href="/" active className="toptabs">Home</NavLink>
           </NavItem>
