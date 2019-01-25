@@ -5,7 +5,7 @@ import WarlordImg from './warlord.png';
 import BerserkerImg from './berserker.png';
 import DestroyerImg from './destroyer.png';
 import WarriorImg from './warrior.png';
-import './warrior.css';
+import '../guidesintro.css';
 
 class Warrior extends React.Component {
   render(){
@@ -15,11 +15,11 @@ class Warrior extends React.Component {
             <p>
                 Please Select your class below.
             </p>
-            <div className='warrior-links'>
-            <div><Link to={'/guides/warrior/berserker'}><img src={WarriorImg} alt=""/><p className="warrior-text">Warrior</p></Link></div>
-            <div><Link to={'/guides/warrior/berserker'}><img src={BerserkerImg} alt="" /><p className="warrior-text">Berserker</p></Link></div>
-            <div><Link to={'/admin/skills'}><img src={WarlordImg} alt="" /><p className="warrior-text">Warlord</p></Link></div>
-            <div><Link to={'/admin/passives'}><img src={DestroyerImg} alt="" /><p className="warrior-text">Destroyer</p></Link></div>
+            <div className='guides-links'>
+            <div><Link to={'/'}><img src={WarriorImg} alt=""/><p className="guides-text">All Guides</p></Link></div>
+            <div><Link to={'/guides/warrior/berserker'}><img src={BerserkerImg} alt="" /><p className="guides-text">Berserker</p></Link></div>
+            <div><Link to={'/guides/warrior/warlord'}><img src={WarlordImg} alt="" /><p className="guides-text">Warlord</p></Link></div>
+            <div><Link to={'/guides/warrior/destroyer'}><img src={DestroyerImg} alt="" /><p className="guides-text">Destroyer</p></Link></div>
             </div>
         </Jumbotron>
       );

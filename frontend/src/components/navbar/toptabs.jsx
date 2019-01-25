@@ -33,9 +33,9 @@ class TopTabs extends React.Component {
             <DropdownMenu>
               <DropdownItem header>Classes</DropdownItem>
               <DropdownItem href="/guides/warrior/warrior">Warrior</DropdownItem>
-              <DropdownItem href="/admin">Fighter</DropdownItem>
-              <DropdownItem href="/admin">Hunter</DropdownItem>
-              <DropdownItem href="/admin">Magician</DropdownItem>
+              <DropdownItem href="/guides/fighter/fighter">Fighter</DropdownItem>
+              <DropdownItem href="/guides/hunter/hunter">Hunter</DropdownItem>
+              <DropdownItem href="/guides/magician/magician">Magician</DropdownItem>
               <DropdownItem divider />
               <DropdownItem href="/admin">Tips & Tricks</DropdownItem>
             </DropdownMenu>

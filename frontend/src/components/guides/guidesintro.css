@@ -1,4 +1,4 @@
-.warrior-links {
+.guides-links {
     margin: auto;
     width: 75%;
     background-color: #1f1f1f;
@@ -8,19 +8,19 @@
 
   }
 
-.warrior-links > div{
+.guides-links > div{
     width: 190px;
     margin-top: 2%;
     display: inline-block;
     vertical-align: bottom;    
 }
 
-.warrior-links:after {
+.guides-links:after {
     content: "";
     width: 100%;
     display: inline-block;
 }
 
-.warrior-text {
+.guides-text {
     color: #fafafa;
 }
