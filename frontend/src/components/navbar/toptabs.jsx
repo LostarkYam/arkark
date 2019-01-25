@@ -2,6 +2,7 @@ import React from 'react';
 import './toptabs.css';
 import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 
+
 class TopTabs extends React.Component {
   constructor(props) {
     super(props);
@@ -27,11 +28,11 @@ class TopTabs extends React.Component {
           </NavItem>
           <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
             <DropdownToggle nav caret className="toptabs">
-              Builds
+              Guides
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem header>Classes</DropdownItem>
-              <DropdownItem href="/admin">Warrior</DropdownItem>
+              <DropdownItem href="/guides/warrior/warrior">Warrior</DropdownItem>
               <DropdownItem href="/admin">Fighter</DropdownItem>
               <DropdownItem href="/admin">Hunter</DropdownItem>
               <DropdownItem href="/admin">Magician</DropdownItem>

@@ -12,6 +12,7 @@ import Passives from './components/admin/passives/passives';
 import TopTabs from './components/navbar/toptabs';
 import News from './components/news/news';
 import Updates from './components/updates/updates';
+import Warrior from './components/guides/warrior/warrior';
 
 
 
@@ -29,6 +30,7 @@ class App extends Component {
             <Route exact path="/admin/skills" component={Skills}></Route>
             <Route exact path="/admin/passives" component={Passives}></Route>
             <Route exact path="/admin" component={Admin}></Route>
+            <Route exact path="/guides/warrior/warrior" component={Warrior}></Route>
             <Route exact path="/" component={Home}></Route>
             <Route component={NotFound}></Route>
           </Switch>

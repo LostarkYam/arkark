@@ -1,0 +1,26 @@
+.warrior-links {
+    margin: auto;
+    width: 75%;
+    background-color: #1f1f1f;
+    border-radius: 25px;
+    height:150px;
+    
+
+  }
+
+.warrior-links > div{
+    width: 190px;
+    margin-top: 2%;
+    display: inline-block;
+    vertical-align: bottom;    
+}
+
+.warrior-links:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.warrior-text {
+    color: #fafafa;
+}
