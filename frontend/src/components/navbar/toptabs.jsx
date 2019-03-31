@@ -1,5 +1,7 @@
 import React from 'react';
+import './toptabs.css';
 import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+
 
 class TopTabs extends React.Component {
   constructor(props) {
@@ -20,32 +22,32 @@ class TopTabs extends React.Component {
   render() {
     return (
       <div>
-        <Nav tabs>
+        <Nav className="tab-items">
           <NavItem>
-            <NavLink href="/" active>Home</NavLink>
+            <NavLink href="/" active className="toptabs">Home</NavLink>
           </NavItem>
           <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-            <DropdownToggle nav caret>
-              Builds
+            <DropdownToggle nav caret className="toptabs">
+              Guides
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem header>Classes</DropdownItem>
-              <DropdownItem href="/admin">Warrior</DropdownItem>
-              <DropdownItem href="/admin">Fighter</DropdownItem>
-              <DropdownItem href="/admin">Hunter</DropdownItem>
-              <DropdownItem href="/admin">Magician</DropdownItem>
+              <DropdownItem href="/guides/warrior/warrior">Warrior</DropdownItem>
+              <DropdownItem href="/guides/fighter/fighter">Fighter</DropdownItem>
+              <DropdownItem href="/guides/hunter/hunter">Hunter</DropdownItem>
+              <DropdownItem href="/guides/magician/magician">Magician</DropdownItem>
               <DropdownItem divider />
               <DropdownItem href="/admin">Tips & Tricks</DropdownItem>
             </DropdownMenu>
           </Dropdown>
           <NavItem>
-            <NavLink href="/admin">Updates</NavLink>
+            <NavLink href="/updates" className="toptabs">Updates</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/admin">News</NavLink>
+            <NavLink href="/news" className="toptabs" >News</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/admin">Discussion Board</NavLink>
+            <NavLink href="/admin" className="toptabs" >Discussion Board</NavLink>
           </NavItem>
         </Nav>
       </div>

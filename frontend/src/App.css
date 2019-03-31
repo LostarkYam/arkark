@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  background-image: url("./img/background.jpg");
+  background-size: cover;                     
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+
+.jumbotron {
+  width: 1100px;
+  border: 3px solid;
+  background-color: #fafafa !important;
+  min-height: 1000px;
+  display: inline-table;
 }
 
 .App-logo {

@@ -1,0 +1,16 @@
+.home-carousel {
+    position: center;
+    margin-bottom: 1%;
+    background-color: black;
+    max-width: 90%;
+}
+
+.arrow {
+    width: 60%;
+
+}
+
+.home-carousel-style {
+    display: flex;
+    justify-content: center;
+}

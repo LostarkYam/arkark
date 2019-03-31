@@ -1,0 +1,26 @@
+.guides-links {
+    margin: auto;
+    width: 75%;
+    background-color: #1f1f1f;
+    border-radius: 25px;
+    height:150px;
+    
+
+  }
+
+.guides-links > div{
+    width: 190px;
+    margin-top: 2%;
+    display: inline-block;
+    vertical-align: bottom;    
+}
+
+.guides-links:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.guides-text {
+    color: #fafafa;
+}

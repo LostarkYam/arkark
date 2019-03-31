@@ -1,0 +1,17 @@
+.card-total {
+    height: 25%;
+    width: 100%;
+    margin: 0.1%;
+
+}
+
+.card-image {
+    size: 25%;
+    float: left;
+    overflow: auto;
+}
+
+.card-button {
+    width: 25%;
+    position: left;
+}
