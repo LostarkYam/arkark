@@ -1,0 +1,13 @@
+.search-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.input-radius {
+    border-radius: 5px;
+}
+
+.button-margin {
+    margin-bottom: 25px;
+}

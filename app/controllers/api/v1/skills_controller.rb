@@ -1,7 +1,7 @@
 module Api::V1
   class SkillsController < ApplicationController
     before_action :set_skill, only: [:show, :edit, :update, :destroy]
-  
+    skip_before_action :verify_authenticity_token
     # GET /skills
     # GET /skills.json
     def index
@@ -30,7 +30,7 @@ module Api::V1
       respond_to do |format|
         if @skill.save
           format.html { redirect_to @skill, notice: 'Skill was successfully created.' }
-          format.json { render :show, status: :created, location: @skill }
+          format.json { render :show, status: :created, location: @api_v1_skills }
         else
           format.html { render :new }
           format.json { render json: @skill.errors, status: :unprocessable_entity }
@@ -44,7 +44,7 @@ module Api::V1
       respond_to do |format|
         if @skill.update(skill_params)
           format.html { redirect_to @skill, notice: 'Skill was successfully updated.' }
-          format.json { render :show, status: :ok, location: @skill }
+          format.json { render :show, status: :ok, location: @api_v1_skills }
         else
           format.html { render :edit }
           format.json { render json: @skill.errors, status: :unprocessable_entity }

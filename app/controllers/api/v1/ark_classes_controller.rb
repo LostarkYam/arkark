@@ -1,6 +1,7 @@
 module Api::V1
   class ArkClassesController < ApplicationController
     before_action :set_ark_class, only: [:show, :edit, :update, :destroy]
+    skip_before_action :verify_authenticity_token
   
     # GET /ark_classes
     # GET /ark_classes.json
@@ -30,7 +31,7 @@ module Api::V1
       respond_to do |format|
         if @ark_class.save
           format.html { redirect_to @ark_class, notice: 'Ark class was successfully created.' }
-          format.json { render :show, status: :created, location: @ark_class }
+          format.json { render :show, status: :created, location: @api_v1_ark_class }
         else
           format.html { render :new }
           format.json { render json: @ark_class.errors, status: :unprocessable_entity }
@@ -44,7 +45,7 @@ module Api::V1
       respond_to do |format|
         if @ark_class.update(ark_class_params)
           format.html { redirect_to @ark_class, notice: 'Ark class was successfully updated.' }
-          format.json { render :show, status: :ok, location: @ark_class }
+          format.json { render :show, status: :ok, location: @api_v1_ark_class }
         else
           format.html { render :edit }
           format.json { render json: @ark_class.errors, status: :unprocessable_entity }
@@ -57,7 +58,7 @@ module Api::V1
     def destroy
       @ark_class.destroy
       respond_to do |format|
-        format.html { redirect_to ark_classes_url, notice: 'Ark class was successfully destroyed.' }
+        format.html { redirect_to api_v1_ark_classes_url, notice: 'Ark class was successfully destroyed.' }
         format.json { head :no_content }
       end
     end

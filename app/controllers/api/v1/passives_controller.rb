@@ -1,7 +1,7 @@
 module Api::V1
   class PassivesController < ApplicationController
     before_action :set_passife, only: [:show, :edit, :update, :destroy]
-  
+    skip_before_action :verify_authenticity_token
     # GET /passives
     # GET /passives.json
     def index
@@ -30,7 +30,7 @@ module Api::V1
       respond_to do |format|
         if @passife.save
           format.html { redirect_to @passife, notice: 'Passive was successfully created.' }
-          format.json { render :show, status: :created, location: @passife }
+          format.json { render :show, status: :created, location: @api_v1_passife }
         else
           format.html { render :new }
           format.json { render json: @passife.errors, status: :unprocessable_entity }
@@ -44,7 +44,7 @@ module Api::V1
       respond_to do |format|
         if @passife.update(passife_params)
           format.html { redirect_to @passife, notice: 'Passive was successfully updated.' }
-          format.json { render :show, status: :ok, location: @passife }
+          format.json { render :show, status: :ok, location: @api_v1_passife }
         else
           format.html { render :edit }
           format.json { render json: @passife.errors, status: :unprocessable_entity }
