@@ -95,7 +95,7 @@ class ClassItem extends React.Component {
                     Are you sure you want to delete this??
                 </ModalBody>
                 <ModalFooter>
-                <Button color="danger" onClick={() => this.removeClasses(this.props.classId)} >Delete</Button>
+                <Button color="danger" onClick={() => this.removeClass(this.props.classId)} >Delete</Button>
                     <Button color="secondary" onClick={this.toggle}>Cancel</Button>
                 </ModalFooter>
             </Modal>

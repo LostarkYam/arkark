@@ -1,0 +1,18 @@
+.bt-container{
+    display: flex;
+    justify-content: center;
+}
+.row-tree{
+    background: white;
+    max-height: 1000px;
+}
+
+.col-skill{
+    overflow-y: scroll;
+    max-height: 1000px;
+}
+
+.col-passive{
+    overflow-y: scroll;
+    max-height: 1000px;
+}

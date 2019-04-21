@@ -8,14 +8,21 @@ class TopTabs extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
+    this.togglebt = this.togglebt.bind(this);
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
+      btDrownDownOpen: false
     };
   }
 
   toggle() {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
+    });
+  }
+  togglebt() {
+    this.setState({
+      btDrownDownOpen: !this.state.btDrownDownOpen
     });
   }
 
@@ -46,6 +53,17 @@ class TopTabs extends React.Component {
           <NavItem>
             <NavLink href="/news" className="toptabs" >News</NavLink>
           </NavItem>
+          <Dropdown nav isOpen={this.state.btDrownDownOpen} toggle={this.togglebt}>
+            <DropdownToggle nav caret className="toptabs">
+              Build Tree
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem href="/bt/warrior">Warrior</DropdownItem>
+              <DropdownItem href="/bt/fighter">Fighter</DropdownItem>
+              <DropdownItem href="/bt/hunter">Hunter</DropdownItem>
+              <DropdownItem href="/bt/magician">Magician</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
           <NavItem>
             <NavLink href="/admin" className="toptabs" >Discussion Board</NavLink>
           </NavItem>
