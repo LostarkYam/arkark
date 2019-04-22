@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardImg, CardBody, CardTitle, Form, ModalHeader, FormGroup, Label, Col, Input,
+import './passiveitem.css';
+import { Card, CardImg, CardBody, CardHeader, Form, ModalHeader, FormGroup, Label, Col, Input,
           Modal, ModalBody, ModalFooter, CardText, Button } from 'reactstrap';
 import { deletePassive, editPassive } from '../../../util/admin/apipassive';
 
@@ -44,9 +45,9 @@ class PassiveItem extends React.Component {
       return(
         <div className="card-total">
             <Card>
+            <CardHeader>{this.props.name}</CardHeader>
             <CardImg top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
               <CardBody>
-                  <CardTitle>{this.props.name}</CardTitle>
                   <CardText>{this.props.description}</CardText>                
                   <Button color="danger" onClick={this.toggle} >Delete</Button>
                   <Button color="info" onClick={this.toggledit} >Update</Button>
