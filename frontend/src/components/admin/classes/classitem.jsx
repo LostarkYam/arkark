@@ -14,6 +14,7 @@ class ClassItem extends React.Component {
           modaledit: false
         };
         this.toggle = this.toggle.bind(this);
+        this.removeClass = this.removeClass.bind(this);
         this.toggledit = this.toggledit.bind(this);
         this.editClasses = this.editClasses.bind(this);
       }
@@ -95,7 +96,7 @@ class ClassItem extends React.Component {
                     Are you sure you want to delete this??
                 </ModalBody>
                 <ModalFooter>
-                <Button color="danger" onClick={() => this.removeClasses(this.props.classId)} >Delete</Button>
+                <Button color="danger" onClick={() => this.removeClass(this.props.classId)} >Delete</Button>
                     <Button color="secondary" onClick={this.toggle}>Cancel</Button>
                 </ModalFooter>
             </Modal>
