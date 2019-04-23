@@ -14,6 +14,7 @@ class ClassItem extends React.Component {
           modaledit: false
         };
         this.toggle = this.toggle.bind(this);
+        this.removeClass = this.removeClass.bind(this);
         this.toggledit = this.toggledit.bind(this);
         this.editClasses = this.editClasses.bind(this);
       }

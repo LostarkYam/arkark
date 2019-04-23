@@ -8,9 +8,6 @@ class Admin extends React.Component {
       return(
         <Jumbotron>
             <h1>Hello This is Test Page</h1>
-            <p>
-                Please Select Data to edit or show.
-            </p>
             <p className='admin-links'>
             <Link to={'/admin/classes'}>Classes</Link>
             <Link to={'/admin/skills'}>Skills</Link>

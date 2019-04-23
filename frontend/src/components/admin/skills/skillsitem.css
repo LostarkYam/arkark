@@ -11,3 +11,8 @@
 .button-margin {
     margin-bottom: 25px;
 }
+
+.card-total {
+    width: 200px !important;
+    margin-right: 10px;
+}
