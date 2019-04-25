@@ -11,6 +11,7 @@ class BTPassive extends React.Component {
         };
     }
     componentDidMount(){
+        // Fix
         // let descrip = this.props ? Object.keys(this.props.skills): '';
         // descrip = descrip.splice(descrip.indexOf('id'),1);
         // descrip ? this.setState({labels: descrip}) : descrip = '';
